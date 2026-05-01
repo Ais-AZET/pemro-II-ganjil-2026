@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Kursus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        .header {
+            background-color: skyblue;
+            text-align: center;
+            color: red;
+        }
+        .form {
+            background-color: gray;
+        }
+        .footer {
+            background-color: salmon;
+        }
+        input[type="text"], input[type="date"], select, textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form-table{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td class="header">
+            <h1>Pendaftaran Kursus</h1>
+        </td>
+    </tr>
+    <tr>
+        <td class="form">
+            <h3>Data Diri</h3>
+            <form>
+                <table class="form-table" width="100%">
+                    <tr>
+                        <td width="40%">Nama</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Nim</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="jk"> Laki-laki <br>
+                            <input type="radio" name="jk"> Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pilih Program Kursus</td>
+                        <td>
+                            <input type="checkbox"> C# <br>
+                            <input type="checkbox"> Java <br>
+                            <input type="checkbox"> SQL <br>
+                            <input type="checkbox"> HTML dan PHP
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pilihan Hari/Jam Kursus</td>
+                        <td>
+                            <select>
+                                <option>Senin - Rabu09.00 - 11.00</option>
+                                <option>Selasa - Kamis09.00 - 11.00</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="footer">
+            Komentar Anda <br>
+            <textarea rows="5"></textarea> <br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            <input type="button" value="Cancel">
+            </form>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
